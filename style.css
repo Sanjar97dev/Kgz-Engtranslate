@@ -1,0 +1,97 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #f8f9fa; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.search {
+    margin: 20px 0px 30px 31px;
+    width: 100%;
+}
+
+.btn {
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 30%;
+    padding: 6.5px;
+    margin-bottom: 10px;
+    border: 1px solid aqua; 
+    border-radius: 5px;
+}
+
+.words_block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.dictionary_block {
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+}
+
+.english,
+.kyrgyz {
+    width: 200px;
+    padding: 11px;
+    background-color: #fff;
+    border: 1px solid aqua;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+.delbtn,
+.editbtn {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.delbtn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-block{
+    padding: 11px;
+}
+
+.editbtn {
+    background-color: #007bff;
+    color: #fff;
+}
+@media screen and (max-width: 768px) {
+    .words_block {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .dictionary_block {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .english,
+    .kyrgyz {
+        width: 100%; /* Full width on mobile */
+    }
+}
